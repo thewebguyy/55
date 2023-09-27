@@ -648,6 +648,25 @@ strong {
   right: 0;
 }
 
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-color: var(--primary-color);
+}
+
+
 #BookingModal .modal-header {
   border-bottom: 0;
   position: relative;
