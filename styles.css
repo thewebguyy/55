@@ -1,11 +1,11 @@
 /* CSS Variables */
 :root {
-    --primary-color: #f44749;
-    --secondary-color: #f3af24;
+    --primary-color: #0078d4; /* Blue color */
+    --secondary-color: #005a9e; /* Darker blue for contrast */
     --background-color: #f9f9f9;
     --text-color: #333;
     --link-color: #0078d4;
-    --button-background: #f44749;
+    --button-background: #0078d4;
     --button-text-color: #fff;
   }
   
