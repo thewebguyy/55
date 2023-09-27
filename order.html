@@ -3,169 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fivefivelounge</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file here -->
+    <title>fivefivelounge - Menu</title>
 </head>
 <body>
     <header>
         <h1>fivefivelounge</h1>
-        <img src="chef-image.jpg" alt="Chef Image">
     </header>
-    
-    <section class="search-bar">
-        <!-- Product search bar goes here -->
-    </section>
-    
-    <section class="filtering-system">
-        <!-- Product filtering options go here -->
-    </section>
-
-    <section class="menu">
-        <h2>Menu</h2>
-        <ul id="menu-list">
-            <h3>BREAKFAST</h3>
-            <ul id="breakfast-menu">
-                <li>
-                    <span class="menu-item-name">ENGLISH BREAKFAST</span>
-                    <span class="menu-item-price">#5000</span>
-                    <p>Toast bread, sausage, baked beans, mushroom, eggs, grilled tomatoes, tea/coffee</p>
-                </li>
-                <li>
-                    <span class="menu-item-name">AMERICAN BREAKFAST</span>
-                    <span class="menu-item-price">#5000</span>
-                    <p>Pancakes, eggs, sausage, grilled tomatoes, mushroom, tea/coffee</p>
-                </li>
-                <li>
-                    <span class="menu-item-name">CUSTARD/OAT</span>
-                    <span class="menu-item-price">#3500</span>
-                    <p>Custard/oat, egg, toast bread, sausage</p>
-                </li>
-                <li>
-                    <span class="menu-item-name">TEA/COFFEE</span>
-                    <span class="menu-item-price">#1000</span>
-                </li>
-                <!-- Add more breakfast items here -->
-            </ul>
-        
-            <h3>PASTA</h3>
-            <ul id="pasta-menu">
-                <li>
-                    <span class="menu-item-name">AFREDO PASTA</span>
-                    <span class="menu-item-price">#5000</span>
-                </li>
-                <li>
-                    <span class="menu-item-name">SEA FOOD PASTA</span>
-                    <span class="menu-item-price">#6000</span>
-                </li>
-                <li>
-                    <span class="menu-item-name">RED SAUCE PASTA</span>
-                    <span class="menu-item-price">#5000</span>
-                </li>
-                <li>
-                    <span class="menu-item-name">SPAGHETTI BOLOGNAISE</span>
-                    <span class="menu-item-price">#5000</span>
-                </li>
-                <!-- Add more pasta items here -->
-            </ul>
-
-            <h3>PASTA</h3>
-            <ul id="pasta-menu">
-                <li>
-                    <span class="menu-item-name">AFREDO PASTA</span>
-                    <span class="menu-item-price">#5000</span>
-                </li>
-                <li>
-                    <span class="menu-item-name">SEA FOOD PASTA</span>
-                    <span class="menu-item-price">#6000</span>
-                </li>
-                <li>
-                    <span class="menu-item-name">RED SAUCE PASTA</span>
-                    <span class="menu-item-price">#5000</span>
-                </li>
-                <li>
-                    <span class="menu-item-name">SPAGHETTI BOLOGNAISE</span>
-                    <span class="menu-item-price">#5000</span>
-                </li>
-                <!-- Add more pasta items here -->
-            </ul>
-
-            <h3>NOODLES</h3>
-            <ul id="pasta-menu">
-                <li>
-                    <span class="menu-item-name">CHICKEN NOODLES</span>
-                    <span class="menu-item-price">#5000</span>
-                </li>
-                <li>
-                    <span class="menu-item-name">NOODLES WITH SHRIMPS</span>
-                    <span class="menu-item-price">#6000</span>
-                </li>
-                <li>
-                    <span class="menu-item-name">NOODLES AND TURKEY</span>
-                    <span class="menu-item-price">#5000</span>
-                </li>
-                <li>
-                    <span class="menu-item-name">NOODLES SHRIMPS TURKEY/CHICKEN</span>
-                    <span class="menu-item-price">#5000</span>
-                </li>
-                <li>
-                    <span class="menu-item-name">CHINESE CHICKEN NOODLES</span>
-                    <span class="menu-item-price">#5000</span>
-                </li>
-                <li>
-                    <span class="menu-item-name">CHINESE BEEF NOODLES</span>
-                    <span class="menu-item-price">#5000</span>
-                </li>
-                <!-- Add more pasta items here -->
-            </ul>
-
-            <h3>STIR FRY</h3>
-            <ul id="pasta-menu">
-                <li>
-                    <span class="menu-item-name">CHICKEN STIR FRY</span>
-                    <span class="menu-item-price">#5000</span>
-                </li>
-                <li>
-                    <span class="menu-item-name">BEEF STIR FRY</span>
-                    <span class="menu-item-price">#6000</span>
-                </li>
-             
-                <!-- Add more pasta items here -->
-            </ul>
-            
-            <h3>FINGER FOOD/SAUCE</h3>
-            <ul id="pasta-menu">
-                <li>
-                    <span class="menu-item-name">YAM (boiled/fried) WITH EGG SAUCE</span>
-                    <span class="menu-item-price">#5000</span>
-                </li>
-                <li>
-                    <span class="menu-item-name">CHICKEN WINGS WITH YAM/FRENCH FRIES</span>
-                    <span class="menu-item-price">#6000</span>
-                </li>
-             
-                <!-- Add more pasta items here -->
-            </ul>
-            
-        
-            <!-- Menu items go here -->
-        </ul>
-    </section>
-    
-    <section class="order-items">
-        <h2>Your Order</h2>
-        <ul id="order-list">
-            <!-- Items added to the order will be displayed here -->
-        </ul>
-        <div class="total-price">
-            <p>Total Price: <span id="total-price">₦0.00</span></p>
-        </div>
-    </section>
-    
-    <section class="action-buttons">
-        <button id="add-to-order" type="button">Add to Order</button>
-        <button id="place-order" type="button">Place Order</button>
-    </section>
-    
-    <script src="js/script.js"></script>
+    <main>
+        <section class="menu">
+            <h2>Menu</h2>
+            <div class="menu-items">
+                <!-- Each menu item is represented as a card -->
+                <div class="menu-item">
+                    <img src="dish1.jpg" alt="Dish 1">
+                    <div class="item-info">
+                        <h3>Dish 1</h3>
+                        <p>Brief description of Dish 1.</p>
+                        <p class="price">#20.00</p>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Repeat this structure for other menu items -->
+            </div>
+        </section>
+        <aside class="cart">
+            <!-- Shopping cart content goes here -->
+        </aside>
+    </main>
+    <script src="script.js"></script> <!-- Include your JavaScript file here -->
 </body>
 </html>
