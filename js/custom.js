@@ -9,3 +9,9 @@
     });
     
   })(window.jQuery);
+
+  var button = document.querySelector('.btn-primary');
+
+button.addEventListener('click', function() {
+  window.location.href = 'order.html';
+});
