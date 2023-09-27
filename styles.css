@@ -1,97 +1,159 @@
-/* Define CSS variables for colors and other styles */
+/* CSS Variables */
 :root {
-    --header-background-color: #333; /* Dark background color for header */
-    --footer-background-color: #333; /* Dark background color for footer */
-    --button-background-color: #f44749; /* Bright color for buttons */
-    --button-text-color: #fff; /* Text color for buttons */
-    --font-family: Arial, sans-serif; /* Consistent font family */
-    --font-size-heading: 24px; /* Larger font size for headings */
-    --font-size-text: 16px; /* Font size for body text */
-    --line-height: 1.5; /* Line height for text */
-    --white-space: 20px; /* White space between elements */
-    --transition-duration: 0.3s; /* Transition duration for animations */
+    --primary-color: #f44749;
+    --secondary-color: #f3af24;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --link-color: #0078d4;
+    --button-background: #f44749;
+    --button-text-color: #fff;
   }
   
   /* Reset some default styles */
-  body, h1, h2, h3, p, ul, li, form, input, button {
+  body, h1, h2, p {
     margin: 0;
     padding: 0;
-    border: 0;
   }
   
-  /* Apply styles to the header */
-  header {
-    background-color: var(--header-background-color);
-    color: var(--button-text-color);
-    font-family: var(--font-family);
+  /* Basic styling for the page */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
     text-align: center;
-    padding: var(--white-space);
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    padding: 1rem;
   }
   
   header h1 {
-    font-size: var(--font-size-heading);
-    margin-bottom: var(--white-space);
+    font-size: 2rem;
   }
   
-  /* Apply styles to the footer */
-  footer {
-    background-color: var(--footer-background-color);
-    color: var(--button-text-color);
-    font-family: var(--font-family);
-    text-align: center;
-    padding: var(--white-space);
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
   }
   
-  /* Apply styles to buttons */
-  button {
-    background-color: var(--button-background-color);
+  section {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Menu items styles */
+  .menu-item {
+    border: 1px solid var(--secondary-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .menu-item h3 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+  }
+  
+  .menu-item p {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  
+  .menu-item button {
+    background-color: var(--button-background);
     color: var(--button-text-color);
     border: none;
-    padding: 10px 20px;
-    font-size: var(--font-size-text);
+    padding: 0.5rem 1rem;
     cursor: pointer;
-    transition: background-color var(--transition-duration);
+    transition: background-color 0.3s;
   }
   
-  button:hover {
-    background-color: #f3af24; /* Brighter color on hover */
+  .menu-item button:hover {
+    background-color: var(--secondary-color);
   }
   
-  /* Apply styles to forms */
-  form {
-    margin: 0 auto;
-    max-width: 600px;
-    padding: var(--white-space);
+  /* Order summary styles */
+  #order-section {
+    text-align: left;
   }
   
-  form label {
-    display: block;
-    font-size: var(--font-size-text);
-    margin-bottom: var(--white-space);
+  #order-summary {
+    border: 1px solid var(--secondary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fff;
   }
   
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: var(--white-space);
-    font-size: var(--font-size-text);
-    line-height: var(--line-height);
-    border: 1px solid #eaeaea;
-    border-radius: var(--border-radius-default);
+  #order-summary h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
   
-  /* Add media query for screens smaller than 768px */
+  /* Place order button styles */
+  #place-order-button {
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  #place-order-button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  footer {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    padding: 1rem;
+  }
+  
   @media (max-width: 768px) {
-    form {
-      display: block;
+    /* Mobile styles */
+    main {
+      padding: 0.5rem;
     }
   
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"] {
-      width: 100%;
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1.25rem;
+    }
+  
+    .menu-item {
+      padding: 0.75rem;
+    }
+  
+    .menu-item h3 {
+      font-size: 1.125rem;
+    }
+  
+    .menu-item p {
+      font-size: 0.875rem;
+    }
+  
+    #place-order-button {
+      font-size: 0.875rem;
     }
   }
   
