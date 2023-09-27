@@ -13,64 +13,69 @@
   
   body {
     font-family: Arial, sans-serif;
+    background-color: var(--white-color);
+    color: var(--dark-color);
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
-    color: #ffffff;
-    padding: 10px 0;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-header img {
-    width: 50px;
-    height: 50px;
-}
-
-.menu {
+    padding: 1rem 0;
+  }
+  
+  .menu {
+    background-color: var(--section-bg-color);
+    padding: 2rem;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.menu h2 {
-    width: 100%;
-    text-align: center;
-}
-
-.menu ul {
-    list-style-type: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu h2 {
+    color: var(--title-color);
+    margin-bottom: 1rem;
+  }
+  
+  .menu h3 {
+    color: var(--title-color);
+    margin-top: 1rem;
+  }
+  
+  .menu ul {
+    list-style: none;
     padding: 0;
-}
-
-.menu li {
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-    padding: 20px;
-    width: calc(33% - 40px);
-}
-
-.menu .menu-item-name {
-    font-size: 20px;
+    width: 100%;
+  }
+  
+  .menu li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu li:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .menu .menu-item-name {
     font-weight: bold;
-}
-
-.menu .menu-item-price {
-    color: #e67e22;
-    font-size: 18px;
+  }
+  
+  .menu .menu-item-price {
     font-weight: bold;
-}
-
-.menu p {
-    margin-top: 10px;
-}
+    color: var(--primary-color);
+  }
+  
+  .menu p {
+    color: var(--p-color);
+  }
+  
+  /* Add more CSS styling as needed */
+  
