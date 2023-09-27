@@ -653,6 +653,7 @@ strong {
   color: var(--white-color);
   border: 1px solid var(--border-color);
   border-radius: 4px;
+  margin-top: 15px;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: 500;
