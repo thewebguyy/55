@@ -1,0 +1,35 @@
+/* Define custom color variables */
+:root {
+    --white-color: #FFFFFF;
+    --primary-color: #f44749;
+    --secondary-color: #f3af24;
+    --section-bg-color: #F9F9F9;
+    --dark-color: #000000;
+    --title-color: #565758;
+    --news-title-color: #292828;
+    --p-color: #717275;
+    --border-color: #eaeaea;
+    --border-radius-default: .25rem;
+  }
+  
+  /* Apply the custom colors to different elements */
+  body {
+    background-color: var(--white-color);
+    color: var(--dark-color);
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+  }
+  
+  h1 {
+    color: var(--white-color);
+  }
+  
+  .menu {
+    background-color: var(--section-bg-color);
+  }
+  
+  /* You can continue to apply custom colors to other elements as needed */
+  
