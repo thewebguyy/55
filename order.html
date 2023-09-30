@@ -1,147 +1,87 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Shopping Cart</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="scss/bootstrap.min.css"/>
-		<link rel="stylesheet" type="text/css" href="scss/custom.css"/>		
-	</head>
+<head>
+    <title>Shopping Cart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="scss/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="scss/custom.css"/>        
+</head>
 
-	<body>
-		
-		<nav class="navbar">
-			<div class="container">
-				<a class="navbar-brand" href="#">FiveFiveLounge</a>
-				<div class="navbar-right">
-					<div class="container minicart"></div>
-				</div>
-			</div>
-		</nav>
-		
-		<div class="container-fluid breadcrumbBox text-center">
-			<ol class="breadcrumb">
-				<li><a href="#">Review</a></li>
-				<li class="active"><a href="#">Order</a></li>
-				<li><a href="#">Payment</a></li>
-			</ol>
-		</div>
-		
-		<div class="container text-center">
+<body>
 
-			<div class="col-md-5 col-sm-12">
-				<div class="bigcart"></div>
-				<h1>Your Food Order</h1>
-				
-			</div>
-			
-			<div class="col-md-7 col-sm-12 text-left">
-				<ul>
-					<li class="row list-inline columnCaptions">
-						<span>QTY</span>
-						<span>ITEM</span>
-						<span>Price</span>
-					</li>
-					<li class="row">
-                        <span class="quantity"><input type="number" value="1"></span>
-                        <span class="itemName">ENGLISH BREAKFAST</span>
-                        <span class="price">#5000</span>
-                    </li>
-                    <li class="row">
-                        <span class="quantity"><input type="number" value="1"></span>
-                        <span class="itemName">AMERICAN BREAKFAST</span>
-                        <span class="price">#5000</span>
-                    </li>
-                    <li class="row">
-                        <span class="quantity"><input type="number" value="1"></span>
-                        <span class="itemName">CUSTARD/OAT</span>
-                        <span class="price">#3500</span>
-                    </li>
+<nav class="navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#">FiveFiveLounge</a>
+        <div class="navbar-right">
+            <div class="container minicart"></div>
+        </div>
+    </div>
+</nav>
 
-                    <li class="row">
-                        <span class="quantity"><input type="number" value="1"></span>
-                        <span class="itemName">ENGLISH BREAKFAST</span>
-                        <span class="price">#5000</span>
-                    </li>
-                    <li class="row">
-                        <span class="quantity"><input type="number" value="1"></span>
-                        <span class="itemName">AMERICAN BREAKFAST</span>
-                        <span class="price">#5000</span>
-                    </li>
-                    <li class="row">
-                        <span class="quantity"><input type="number" value="1"></span>
-                        <span class="itemName">CUSTARD/OAT</span>
-                        <span class="price">#3500</span>
-                    </li>
+<div class="container-fluid breadcrumbBox text-center">
+    <ol class="breadcrumb">
+        <li class="active"><a href="#">Order</a></li>
+    </ol>
+</div>
 
-                    <li class="row">
-                        <span class="quantity"><input type="number" value="1"></span>
-                        <span class="itemName">ENGLISH BREAKFAST</span>
-                        <span class="price">#5000</span>
-                    </li>
-                    <li class="row">
-                        <span class="quantity"><input type="number" value="1"></span>
-                        <span class="itemName">AMERICAN BREAKFAST</span>
-                        <span class="price">#5000</span>
-                    </li>
-                    <li class="row">
-                        <span class="quantity"><input type="number" value="1"></span>
-                        <span class="itemName">CUSTARD/OAT</span>
-                        <span class="price">#3500</span>
-                    </li>
+<div class="container text-center">
 
-                    <li class="row">
-                        <span class="quantity"><input type="number" value="1"></span>
-                        <span class="itemName">ENGLISH BREAKFAST</span>
-                        <span class="price">#5000</span>
-                    </li>
-                    <li class="row">
-                        <span class="quantity"><input type="number" value="1"></span>
-                        <span class="itemName">AMERICAN BREAKFAST</span>
-                        <span class="price">#5000</span>
-                    </li>
-                    <li class="row">
-                        <span class="quantity"><input type="number" value="1"></span>
-                        <span class="itemName">CUSTARD/OAT</span>
-                        <span class="price">#3500</span>
-                    </li>
-                    <!-- Add more menu items following the same structure -->
-                
-					<li class="row">
-						<span class="quantity">18</span>
-						<span class="itemName">Pound of beef</span>
-						<span class="popbtn"><a class="arrow"></a></span>
-						<span class="price">#269.45</span>
-					</li>
-					<li class="row">
-						<span class="quantity">1</span>
-						<span class="itemName">Chicken Noodles</span>
-						<span class="popbtn"  data-parent="#asd" data-toggle="collapse" data-target="#demo"><a class="arrow"></a></span>
-						<span class="price">#4500.00</span>				
-					</li>
-					<li class="row totals">
-						<span class="itemName">Total:</span>
-						<span class="price">#1694.43</span>
-						<span class="order"> <a class="text-center">ORDER</a></span>
-					</li>
-				</ul>
-			</div>
+    <div class="col-md-5 col-sm-12">
+        <!-- Add a bigcart element with a large image of the food order -->
+        <div class="bigcart">
+            <!-- Add an image here -->
+            <img src="food_image.jpg" alt="Food Image">
+        </div>
+    </div>
 
-		</div>
+    <div class="col-md-7 col-sm-12 text-left">
+        <ul>
+            <!-- List the food items -->
+            <li class="row list-inline columnCaptions">
+                <span>QTY</span>
+                <span>ITEM</span>
+                <span>Price</span>
+            </li>
+            <li class="row">
+                <span class="quantity"><input type="number" value="1"></span>
+                <span class="itemName">ENGLISH BREAKFAST</span>
+                <span class="price">#5000</span>
+            </li>
+            <!-- Add more food items here -->
+            <!-- Remove the popbtn elements as they are not needed for the image -->
+            <!-- ... -->
 
-		<!-- The popover content -->
+            <!-- Add a totals row at the bottom -->
+            <li class="row totals">
+                <span class="itemName">Total:</span>
+                <span class="price">#1694.43</span>
+                <!-- Center the order button in the totals row -->
+                <span class="order text-center"><a>ORDER</a></span>
+            </li>
+        </ul>
+    </div>
 
-		<div id="popover" style="display: none">
-			<a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
-			<a href="#"><span class="glyphicon glyphicon-remove"></span></a>
-		</div>
-		
-		<!-- JavaScript includes -->
+</div>
 
-		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
-		<script src="assets/js/bootstrap.min.js"></script>
-		<script src="assets/js/custom.js"></script>
+<style>
+    /* Add margin-bottom to the col-md-7 column for spacing */
+    .col-md-7 {
+        margin-bottom: 20px;
+    }
+</style>
 
-	</body>
+<!-- The popover content -->
+<div id="popover" style="display: none">
+    <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+    <a href="#"><span class="glyphicon glyphicon-remove"></span></a>
+</div>
+
+<!-- JavaScript includes -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/custom.js"></script>
+
+</body>
 </html>
